@@ -11,7 +11,6 @@ rm -rf installTmp
 
 # Build LLVM
 msg "Building LLVM..."
-export LLVM_EXPERIMENTAL_TARGETS_TO_BUILD="ARM-Twilight;AArch64-Twilight;X86-Twilight"
 ./build-llvm.py \
 	--build-stage1-only \
 	--install-stage1-only \
