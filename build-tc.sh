@@ -17,7 +17,8 @@ msg "Building LLVM..."
 	--target "ARM;AArch64;X86" \
 	--projects "clang;lld;polly" \
 	--install-folder "installTmp" \
-	--clang-vendor "Twilight-$(date +%Y%m)"
+	--clang-vendor "Canary-$(date +%Y%m)" \
+	--additional-build-arguments "CLANG_REPOSITORY_STRING=GitHub.com/Canary233"
 
 # Build binutils
 msg "Building binutils..."
