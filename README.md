@@ -40,7 +40,8 @@ These scripts have been tested in a Docker image of the following distributions,
               texinfo \
               u-boot-tools \
               xz-utils \
-              zlib1g-dev
+              zlib1g-dev \
+              gcc-multilib
   ```
 
   On Debian Buster or Ubuntu Bionic/Cosmic/Disco, `apt install lld` should be added as well for faster compiles.
