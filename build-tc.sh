@@ -15,13 +15,14 @@ msg "Building LLVM..."
 	--update \
 	--update-llvm \
 	--update-binutils \
-    --lto "thin" \
-    --pgo "llvm" \
+    	--lto "thin" \
+    	--pgo "llvm" \
 	--projects "clang;lld;polly" \
 	--targets "ARM;AArch64;X86" \
 	--install-folder "installTmp" \
 	--clang-vendor "Kyuofox-$(date +%Y%m%d)" \
-	--additional-build-arguments "CLANG_REPOSITORY_STRING=GitHub.com/KyuoFoxHuyu"
+	--additional-build-arguments "CLANG_REPOSITORY_STRING=GitHub.com/KyuoFoxHuyu" \
+	--defines "LLVM_PARALLEL_COMPILE_JOBS=$(nproc) LLVM_PARALLEL_LINK_JOBS=$(nproc)"
 
 # Build binutils
 msg "Building binutils..."
