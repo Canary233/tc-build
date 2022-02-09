@@ -16,6 +16,7 @@ msg "Building LLVM..."
 	--update-llvm \
 	--update-binutils \
 	--incremental \
+	--shallow-clone \
     	--lto "thin" \
     	--pgo "llvm" \
 	--projects "clang;lld;polly;bolt" \
