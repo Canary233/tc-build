@@ -17,7 +17,7 @@ msg "Building LLVM..."
 	--update-binutils \
     	--lto "thin" \
     	--pgo "llvm" \
-	--projects "clang;lld;polly" \
+	--projects "clang;lld;polly;bolt" \
 	--targets "ARM;AArch64;X86" \
 	--install-folder "installTmp" \
 	--clang-vendor "Kyuofox-$(date +%Y%m%d)" \
