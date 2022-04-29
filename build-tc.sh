@@ -19,6 +19,7 @@ msg "Building LLVM..."
 	--shallow-clone \
     	--lto "thin" \
     	--pgo "llvm" \
+	--bolt \
 	--projects "clang;lld;polly;bolt" \
 	--targets "ARM;AArch64;X86" \
 	--install-folder "installTmp" \
