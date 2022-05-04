@@ -159,7 +159,8 @@ def invoke_configure(build_folder, install_folder, root_folder, target,
         'CXX=g++', '--disable-compressed-debug-sections', '--disable-gdb',
         '--disable-gprofng', '--disable-werror',
         '--enable-deterministic-archives', '--enable-new-dtags',
-        '--enable-plugins', '--enable-threads',
+        '--enable-plugins', '--enable-threads', '--enable-warn-execstack=no',
+        '--enable-warn-rwx-segments=no',
         '--prefix=%s' % install_folder.as_posix(), '--quiet',
         '--with-system-zlib'
     ]
