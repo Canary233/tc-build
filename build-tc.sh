@@ -18,7 +18,7 @@ msg "Building LLVM..."
 	--incremental \
 	--shallow-clone \
     	--lto "thin" \
-    	--pgo "llvm" \
+    	--pgo "kernel-defconfig-slim" \
 	--bolt \
 	--projects "clang;lld;polly;bolt" \
 	--targets "ARM;AArch64;X86" \
