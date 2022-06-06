@@ -17,7 +17,7 @@ msg "Building LLVM..."
 	--update-binutils \
 	--incremental \
 	--shallow-clone \
-    	--lto "thin" \
+    	--lto "full" \
     	--pgo "kernel-defconfig-slim" \
 	--bolt \
 	--projects "clang;lld;polly;bolt" \
