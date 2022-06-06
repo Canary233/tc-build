@@ -23,8 +23,8 @@ msg "Building LLVM..."
 	--projects "clang;lld;polly;bolt" \
 	--targets "ARM;AArch64;X86" \
 	--install-folder "installTmp" \
-	--clang-vendor "Kitsune-$(date +%Y%m%d)" \
-	--additional-build-arguments "CLANG_REPOSITORY_STRING=GitHub.com/Kyuofox" \
+	--clang-vendor "Canary" \
+	--additional-build-arguments "CLANG_REPOSITORY_STRING=GitHub.com/Canary233" \
 	--defines "LLVM_PARALLEL_COMPILE_JOBS=$(nproc) LLVM_PARALLEL_LINK_JOBS=$(nproc) CMAKE_C_FLAGS=-O3 CMAKE_CXX_FLAGS=-O3"
 
 # Build binutils
