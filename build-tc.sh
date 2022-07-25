@@ -18,7 +18,8 @@ export LLVM_EXPERIMENTAL_TARGETS_TO_BUILD="ARM-Twilight;AArch64-Twilight;X86-Twi
 	--target "ARM;AArch64;X86" \
 	--projects "clang;lld;polly" \
 	--install-folder "installTmp" \
-	--clang-vendor "Twilight-$(date +%Y%m)"
+	--clang-vendor "Canary-$(date +%Y%m)" \
+	--additional-build-arguments "CLANG_REPOSITORY_STRING=GitHub.com/Canary233"
 
 # Build binutils
 msg "Building binutils..."
